@@ -1,0 +1,55 @@
+.box{ 
+  width:130px;
+  height:130px;
+  position:relative;
+  /*cursor:pointer;*/
+ }
+.box .bmbox{ 
+  width:130px; 
+  height:130px; 
+  background:gainsboro; 
+   opacity: 0.5; 
+  position:absolute; 
+  bottom:0px; 
+  left:0px; 
+  display:none;
+  font:12px/30px "宋体"; color:white;
+  padding-top:20px;
+  text-align:center;
+ }
+.box:hover .bmbox{
+  width:130px; 
+  height:130px; 
+  background:gainsboro;
+  opacity: 0.5; 
+  position:absolute; 
+  bottom:0px; 
+  left:0px; 
+  display:block;
+  font:12px/30px "宋体"; color:white;
+  padding-top:20px;
+  text-align:center;
+ }
+ 
+ /*分页*/
+ .pagecount{
+    text-align: center;
+    margin-bottom: 5px;
+    padding:15px 15px 20px 0;
+}
+.pagecount span{
+    display: inline-block;
+    background: #ddd;
+    margin:0 0 0 5px;
+    width:40px;
+    text-align: center;
+    padding:2px 8px 2px 8px;
+    border:1px solid #eee;
+    color: #666;
+}
+.pagecount span a{
+    color:#333;
+}
+.pagecount span a:hover{
+    text-decoration: underline;
+}

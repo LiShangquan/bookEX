@@ -1,0 +1,27 @@
+﻿# SPRING PROFILES 
+spring:
+    # DATASOURCE  
+    datasource:  
+        driverClass: com.mysql.jdbc.Driver  
+        url: jdbc:mysql://127.0.0.1:3306/bookex?useUnicode=true&characterEncoding=utf-8  
+        username: root
+        password: 20130516185
+    # HTTP ENCODING  
+    http:  
+        encoding.charset: UTF-8  
+        encoding.enable: true  
+        encoding.force: true  
+    mvc:
+        view.prefix: /WEB-INF/jsp/
+        view.suffix: .jsp
+    jackson:
+        # 时间格式化 
+        date-format: yyyy-MM-dd HH:mm:ss
+        # 时区设置  
+        time-zone: Asia/Chongqing 
+
+mybatis:
+  mapper-locations: classpath:mapping/*/*.xml
+  type-aliases-package: com.cqnu.bookEX.model.*
+  check-config-location: true
+  config-location: classpath:MybatisConfig.xml
